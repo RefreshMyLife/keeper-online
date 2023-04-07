@@ -13,7 +13,10 @@
 }
 
 .header {
-  min-height: 40px;
+  min-height: 3.5vw;
+  position: relative;
+  min-height: 3.5vw;
+  z-index: 2;
 }
 .header__bg {
   position: relative;
@@ -44,7 +47,8 @@
   -o-background-size: cover;
   background-size: 100%;
   position: absolute;
-  width: 25%;
+  width: 34%;
+  height: 100%;
 }
 .sidebar__container {
   padding-left: 46px;
@@ -98,17 +102,27 @@ html {
   height: auto;
   padding-left: 11.1%;
   padding-right: 14.3%;
+  height: 100vh;
 }
 .container__inner {
   min-height: 100%;
-  margin-top: 10px;
+  padding-bottom: 5%;
   min-width: 681px;
   margin-right: -42%;
   width: 90%;
-  height: 300px;
   padding-left: 5%;
   padding-right: 5%;
-  height: 300px;
+  height: 100%;
+  position: relative;
+}
+.container__inner::after {
+  content: "";
+  left: 0;
+  top: 10px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
   background: url("../images/Background/first-main-bg.png") repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -117,7 +131,9 @@ html {
 }
 .container__content {
   display: table;
+  width: 100%;
   padding-left: 40px;
+  padding-top: 5px;
 }
 
 .control {
