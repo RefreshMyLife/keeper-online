@@ -38,7 +38,7 @@
 .sidebar {
   display: table-cell;
   vertical-align: middle;
-  background: url("/images/Background/sidebar-bg.png") repeat center center;
+  background: url("../images/Background/sidebar-bg.png") repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -84,7 +84,7 @@ body {
 }
 
 html {
-  background: url("/images/Background/mainBg.png") repeat center center;
+  background: url("../images/Background/mainBg.png") repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -109,7 +109,7 @@ html {
   padding-left: 5%;
   padding-right: 5%;
   height: 300px;
-  background: url("/images/Background/first-main-bg.png") repeat center center;
+  background: url("../images/Background/first-main-bg.png") repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
