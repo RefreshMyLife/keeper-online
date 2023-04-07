@@ -1,0 +1,26 @@
+.header {
+  min-height: 40px;
+  &__bg {
+    position: relative;
+    // margin-right: 10%;
+  }
+
+  &__bg-img {
+    min-height: 100%;
+    position: absolute;
+    min-width: 381px;
+
+    /* Устанавливаем коэффициент пропорциональности */
+
+    width: 100%;
+
+    height: auto;
+
+    /* Устанавливаем позиционирование */
+
+    top: 0;
+    left: 0;
+  }
+  &__container {
+  }
+}

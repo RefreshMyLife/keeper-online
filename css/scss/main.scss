@@ -1,0 +1,95 @@
+@import 'blocks/preview';
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/siderbar';
+// Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
+$fontFamily: 'Palatino Linotype';
+$fontSize: rem(16); // где 14(px) - размер шрифта по умолчанию из макета
+
+// Основной цвет шрифта
+$mainWhite: #fff;
+$mainInfoBlack: #b48981;
+$mainCountBlack: #2a1719;
+$mainCountDarkRed: #920404;
+$mainCountDarkYellow: #953e00;
+
+:root {
+  --accent: orange;
+  --text: #333;
+  --regular-text: 16px;
+  --lineheight: 1.65;
+  --userfont: roboto-st, sans-serif;
+  --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+/* GENERAL CSS SETTINGS */
+
+input,
+textarea {
+  outline: none;
+}
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+  border-color: red;
+}
+input:required:valid,
+textarea:required:valid {
+  border-color: green;
+}
+
+body {
+  font-family: 'Palatino Linotype';
+  font-size: 16px;
+  color: $mainWhite;
+  min-width: 320px;
+}
+
+html {
+  background: url('../../../images/Background/mainBg.png') repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
+}
+.container {
+  min-width: 771px;
+  height: 100%;
+  margin-top: 45vh;
+  height: auto;
+  padding-left: 11.1%;
+  padding-right: 14.3%;
+
+  &__inner {
+    min-height: 100%;
+    margin-top: 10px;
+    min-width: 681px;
+    margin-right: -42%;
+    width: 90%;
+    height: 300px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    height: 300px;
+    background: url('../../images/Background/first-main-bg.png') repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+  }
+  &__content {
+    display: table;
+    padding-left: 40px;
+  }
+}
+.control {
+  float: left;
+}
+
+/* MIXINS */
+
+@mixin greenGradient {
+  background: linear-gradient(to right, #4aff46, #18b015);
+}
+@mixin redGradient {
+  background: linear-gradient(to right, #be0000, #ff0000);
+}

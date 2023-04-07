@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.eot');
+  src: url('../fonts/Inter-Bold.woff2') format('woff2'), url('Inter-Bold.woff') format('woff'),
+    url('../fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Palatino Linotype';
+  src: url('../fonts/PalatinoLinotype-Bold.eot');
+  src: url('../fonts/PalatinoLinotype-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PalatinoLinotype-Bold.woff2') format('woff2'),
+    url('../fonts/PalatinoLinotype-Bold.woff') format('woff'),
+    url('../fonts/PalatinoLinotype-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Palatino Linotype';
+  src: url('../fonts/PalatinoLinotype-Roman.eot');
+  src: url('../fonts/PalatinoLinotype-Roman.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PalatinoLinotype-Roman.woff2') format('woff2'),
+    url('../fonts/PalatinoLinotype-Roman.woff') format('woff'),
+    url('../fonts/PalatinoLinotype-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

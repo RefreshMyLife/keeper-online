@@ -1,0 +1,41 @@
+.preview {
+  &__bg {
+    min-height: 100%;
+
+    min-width: 1024px;
+
+    /* Устанавливаем коэффициент пропорциональности */
+
+    width: 100%;
+
+    height: auto;
+
+    /* Устанавливаем позиционирование */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+// .outer {
+//   display: table;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+//   background-color: black;
+// }
+
+// .middle {
+//   display: table-cell;
+//   vertical-align: middle;
+// }
+
+// .inner {
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 400px;
+//   /* Whatever width you want */
+// }

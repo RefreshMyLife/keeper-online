@@ -1,0 +1,17 @@
+.sidebar {
+  display: table-cell;
+  vertical-align: middle;
+
+  background: url('../../../images/Background/sidebar-bg.png') repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
+
+  position: absolute;
+  width: 25%;
+  &__container {
+    padding-left: 46px;
+    width: 55%;
+  }
+}
