@@ -61,3 +61,19 @@
     &__player-level {
     }
 }
+@media screen and (max-width: 1440px) {
+    .table {
+        &__name {
+            font-size: 10px;
+            line-height: 13px;
+        }
+    }
+}
+@media screen and (max-width: 1300px) {
+    .table {
+        &__name {
+            font-size: 8px;
+            line-height: 13px;
+        }
+    }
+}

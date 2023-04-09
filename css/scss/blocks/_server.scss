@@ -92,6 +92,11 @@
             min-height: 5px;
             max-width: 230px;
             background: linear-gradient(to right, #18b015, #4aff46);
+            -ms-filter: progid:DXImageTransform.Microsoft.Gradient(
+                startColorStr='#18b015', 
+                endColorStr='#4aff46',   
+                GradientType=1           
+           );
         }
         .fill-1 {
             width: 100%;
@@ -107,7 +112,12 @@
         }
         .fill-5 {
             width: 100%;
-            background: linear-gradient(to right, #be0000, #ff0000) !important;
+            background: linear-gradient(to right, #be0000, #ff0000);
+            -ms-filter: progid:DXImageTransform.Microsoft.Gradient(
+                startColorStr='#be0000', 
+                endColorStr='#ff0000',   
+                GradientType=1           
+           );
         }
     }
     &__capacity {
