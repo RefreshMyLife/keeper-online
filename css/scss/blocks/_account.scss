@@ -1,0 +1,79 @@
+.account {
+    left: 50%;
+    display: inline;
+    width: 90%;
+    margin-top: 40px;
+    z-index: 2;
+    text-align: center;
+    &__form {
+    }
+    &__label {
+        font-family: 'Palatino Linotype';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 80.41%;
+    }
+    &__login {
+    }
+    &__password {
+    }
+
+    &__captcha {
+        text-align: left;
+        color: #211612;
+        padding-left: 5px;
+    }
+
+    &__captcha-question {
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    &__captcha-example {
+        font-weight: 700;
+        font-size: 13px;
+    }
+
+    &__answer {
+    }
+
+    &__select-server {
+        width: 100% !important;
+        min-height: 35px !important;
+        cursor: pointer;
+        option {
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 161.41%;
+            color: white;
+            background-color: #201511;
+        }
+        option:checked {
+            background-color: #170c09;
+            color: white;
+            text-shadow: red 2px 0px;
+        }
+    }
+
+    &__signin-btn {
+        margin-top: 10px;
+    }
+    &__info {
+    }
+    &__forgot {
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 80.41%;
+        text-align: center;
+        color: #251600;
+    }
+
+    &__registration {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 80.41%;
+        color: #251600;
+        text-align: center;
+    }
+}

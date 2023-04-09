@@ -1,52 +1,280 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- <base href="/"> -->
+    <head>
+        <meta charset="utf-8" />
+        <!-- <base href="/"> -->
 
-    <title>Simple Starter</title>
-    <meta name="description" content="Simple Starter Description" />
+        <title>Simple Starter</title>
+        <meta name="description" content="Simple Starter Description" />
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
 
-    <link rel="icon" href="images/favicon.png" />
-    <meta property="og:image" content="images/preview.jpg" />
+        <link rel="icon" href="images/favicon.png" />
+        <meta property="og:image" content="images/preview.jpg" />
 
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
 
-    <script src="js/common.js" defer></script>
-  </head>
+        <script src="js/common.js" defer></script>
+    </head>
 
-  <body>
-    <div class="preview">
-      <img src="images/bgWithLogo.png" alt="Bg" class="preview__bg" />
-    </div>
-
-    <div class="container">
-      <div class="container__inner">
-        <header class="header">
-          <div class="header__bg">
-            <img
-              src="images/Background/header-bg.png"
-              alt="header background"
-              class="header__bg-img"
-            />
-          </div>
-          <div class="header__container"></div>
-        </header>
-        <div class="container__content">
-          <div class="main">
-            ---------------------------------------------------------------------------------------------------
-          </div>
-          <div class="sidebar">
-            <div class="sidebar__container">-------------------------------------------</div>
-          </div>
+    <body>
+        <div class="preview">
+            <img src="images/bgWithLogo.png" alt="Bg" class="preview__bg" />
         </div>
-      </div>
-    </div>
-  </body>
+
+        <div class="container">
+            <div class="container__inner">
+                <header class="header">
+                    <div class="header__bg">
+                        <img
+                            src="images/Background/header-bg.png"
+                            alt="header background"
+                            class="header__bg-img"
+                        />
+                    </div>
+                    <div class="header__container"></div>
+                </header>
+                <div class="container__content">
+                    <div class="main">
+                        ---------------------------------------------------------------------------------------------------
+                    </div>
+                    <div class="sidebar">
+                        <div class="sidebar__container">
+                            <div class="sidebar__container-inner">
+                                <div class="account">
+                                    <div class="account__label info__bg">Личный кабинет</div>
+                                    <form action="" class="account__form">
+                                        <input
+                                            type="email"
+                                            placeholder="Логин"
+                                            value=""
+                                            class="account__login input__style"
+                                        />
+
+                                        <input
+                                            type="password"
+                                            placeholder="Пароль"
+                                            value=""
+                                            class="account__password input__style"
+                                            input__style
+                                        />
+                                        <div class="account__captcha">
+                                            <span class="account__captcha-question"
+                                                >Решите пример :</span
+                                            >
+                                            <br />
+                                            <span class="account__captcha-example">2 * 3</span>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            class="account__answer input__style"
+                                            placeholder="Ответ"
+                                        />
+                                        <select class="account__select-server input__style" >
+                                            <option value="" hidden disabled selected>Выбрать сервер</option>
+                                            <option>Master x10</option>
+                                            <option>Origin x100</option>
+                                            <option>Avalon x500</option>
+                                            <option>Deus x100</option
+                                        </select>
+                                        <input
+                                            type="submit"
+                                            value="Войти"
+                                            class="account__signin-btn button"
+                                        />
+                                    </form>
+                                    <div class="account__info">
+                                        <a href="" class="account__forgot">Забыли пароль?</a><br />
+                                        <a href="" class="account__registration">Регистрация</a>
+                                    </div>
+                                </div>
+                                <div class="server">
+                                    <div class="server__label info__bg">Статус сервера</div>
+                                    <div class="server__filling">
+                                        <div class="server__item">
+                                            <div class="server__info">
+                                                <span class="server__name">Masters</span> 
+                                                <span class="server__mode">x10</span>
+                                                <span class="server__online">300</span>
+                                            </div>
+                                            <div class="server__line">
+                                                <div class="server__line-fill server__line fill-1"></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="server__item">
+                                            <div class="server__info">
+                                                <span class="server__name">Master</span> 
+                                                <span class="server__mode">#10</span>
+                                                <span class="server__online">250</span>
+                                            </div>
+                                            <div class="server__line">
+                                                <div class="server__line-fill fill-2"></div>
+                                            </div>
+                                        </div>
+                                        <div class="server__item">
+                                            <div class="server__info">
+                                                <span class="server__name">Origin</span> 
+                                                <span class="server__mode">x100</span>
+                                                <span class="server__online">229</span>
+                                            </div>
+                                            <div class="server__line">
+                                                <div class="server__line-fill fill-3"></div>
+                                            </div>
+                                        </div>
+                                        <div class="server__item">
+                                            <div class="server__info">
+                                                <span class="server__name">Avalon</span> 
+                                                <span class="server__mode">x100</span>
+                                                <span class="server__online">54</span>
+                                            </div>
+                                            <div class="server__line">
+                                                <div class="server__line-fill fill-4"></div>
+                                            </div>
+                                        </div>
+                                        <div class="server__item">
+                                            <div class="server__info">
+                                                <span class="server__name">Deus</span> 
+                                                <span class="server__mode">x1000</span>
+                                                
+                                            </div>
+                                            <div class="server__line">
+                                                <div class="server__line-fill fill-5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="server__capacity">
+                                        <img src="images/server-decor.png" alt="" class="server__img-decor">
+                                        <div class="server__all-online">Общий онлайн: <span class="server__online-number">1268</span></div>
+                                        <div class="server__today-online">Онлайн сегодня: <span class="server__online-number">3347</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="market">
+                                    <div class="market__label info__bg">Рынок</div>
+                                    <div class="market__items">
+                                        <div class="market__item input__style">
+                                            <div class="market__item-name ">Seed Sphere (Wind) +1</div>
+                                        </div>
+                                        <div class="market__item input__style">
+                                            <div class="market__item-name">Seed Sphere (Water) +4</div>
+                                        </div>
+                                        <div class="market__item input__style">
+                                            <div class="market__item-name">Evis Bone Armor +12</div>
+                                        </div>
+                                        <div class="market__item input__style ">
+                                            <div class="market__item-name">Gywen Guardian Armor +13</div>
+                                        </div>
+                                        <div class="market__item input__style">
+                                            <div class="market__item-name">Agnis Adamantine Pants +13</div>
+                                        </div>
+                                      
+                                        
+                                        
+                                    </div>
+                                    <a href="" class="market__signIn-link button">Войти на рынок</a>
+                                </div>
+
+                                <div class="top__players">
+                                    <div class="top__players-label info__bg">Топ 5 игроков</div>   
+                                    
+                                    <table class="top__players-table table">
+                                        <tr class="table__names">
+                                            <td class="table__name">Имя</td>
+                                            <td class="table__name">Сбрасываний</td>
+                                            <td class="table__name">Уровень</td>
+                                        </tr>
+                                        <tr class="table__players-info">
+                                            <td class="table__player-name">Maks</td>
+                                            <td class="table__player-drops">50</td>
+                                            <td class="table__player-level">389</td>                                           
+                                        </tr>
+                                        <tr class="table__players-info">
+                                            <td class="table__player-name"> Andrey</td>
+                                            <td class="table__player-drops">49</td>
+                                            <td class="table__player-level">334</td>                                           
+                                        </tr>
+                                        <tr class="table__players-info">
+                                            <td class="table__player-name">Olga</td>
+                                            <td class="table__player-drops">47</td>
+                                            <td class="table__player-level">356</td>                                           
+                                        </tr>
+                                        <tr class="table__players-info">
+                                            <td class="table__player-name">Elena</td>
+                                            <td class="table__player-drops">44</td>
+                                            <td class="table__player-level">326</td>                                           
+                                        </tr>
+                                        <tr class="table__players-info">
+                                            <td class="table__player-name">Antonio</td>
+                                            <td class="table__player-drops">42</td>
+                                            <td class="table__player-level">312</td>                                           
+                                        </tr>
+                                    </table>
+
+                                </div>
+
+                                <div class="events">
+                                    <div class="events__label info__bg">Ивенты</div>
+                                    <table class="events__table">
+                                        <tr></tr>
+                                        <tr class="events__info">
+                                            <td class="events__name">Blood Castle</td>
+                                            <td class="events__space"></td>
+                                            <td class="events__start-time">20:30</td>
+                                        </tr>
+                                        <tr class="events__data">
+                                            <td class="events__start">Начнётся через</td>
+                                            <td class="events__space"></td>
+                                            <td class="events__timer">00:28:12</td>
+                                        </tr>
+
+                                        <tr class="events__info">
+                                            <tr></tr>
+                                            <td class="events__name">Devil Square</td>
+                                            <td class="events__space"></td>
+                                            <td class="events__start-time">21:30</td>
+                                        </tr>
+                                        <tr class="events__data">
+                                            <td class="events__start">Начнётся через</td>
+                                            <td class="events__space"></td>
+                                            <td class="events__timer">01:28:12</td>
+                                        </tr>
+
+                                        <tr class="events__info">
+                                            <tr></tr>
+                                            <td class="events__name">Chaos Castle</td>
+                                            <td class="events__space"></td>
+                                            <td class="events__start-time">22:30</td>
+                                        </tr>
+                                        <tr class="events__data">
+                                            <td class="events__start">Начнётся через</td>
+                                            <td class="events__space"></td>
+                                            <td class="events__timer">02:28:12</td>
+                                        </tr>
+
+                                        <tr class="events__info">
+                                            <tr></tr>
+                                            <td class="events__name">Balarog</td>
+                                            <td class="events__space"></td>
+                                            <td class="events__start-time">23:30</td>
+                                        </tr>
+                                        <tr class="events__data">
+                                            <td class="events__start">Начнётся через</td>
+                                            <td class="events__space"></td>
+                                            <td class="events__timer">03:28:12</td>
+                                           
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

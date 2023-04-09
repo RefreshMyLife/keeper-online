@@ -1,0 +1,36 @@
+.market {
+    text-align: center;
+    margin-bottom: 40px;
+    &__label {
+    }
+
+    &__items {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    &__item {
+        &:last-child {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__item-name {
+        text-align: left;
+        padding-left: 5px;
+    }
+    &__signIn-link {
+        margin-top: 20px;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 80.41%;
+        /* identical to box height, or 8px */
+
+        text-align: center;
+
+        color: #f5f5f5;
+    }
+}

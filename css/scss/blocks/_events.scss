@@ -1,0 +1,63 @@
+.events {
+    &__label {
+    }
+
+    &__table {
+    }
+
+    &__info {
+        table-layout: auto;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        text-shadow: 1px 0px #920404;
+        color: #2a1719;
+    }
+
+    &__name {
+        table-layout: auto;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        text-shadow: 1px 0px #920404;
+        color: #2a1719;
+    }
+    &__space {
+        width: 50px;
+    }
+    &__start-time {
+        table-layout: auto;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        text-shadow: 1px 0px #920404;
+        color: #2a1719;
+    }
+
+    &__data {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        position: relative;
+        color: #2a1719;
+        &::after {
+            content: '';
+            left: 0;
+            top: 10px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: url('../images/table-line.png') no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: 100%;
+        }
+    }
+
+    &__start {
+    }
+
+    &__timer {
+    }
+}

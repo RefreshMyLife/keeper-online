@@ -2,6 +2,13 @@
 @import 'blocks/header';
 @import 'blocks/main';
 @import 'blocks/siderbar';
+@import 'blocks/account';
+@import 'blocks/global_ui';
+@import 'blocks/server';
+@import 'blocks/market';
+@import 'blocks/top-players';
+@import 'blocks/events';
+
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
 $fontFamily: 'Palatino Linotype';
 $fontSize: rem(16); // где 14(px) - размер шрифта по умолчанию из макета
@@ -14,94 +21,92 @@ $mainCountDarkRed: #920404;
 $mainCountDarkYellow: #953e00;
 
 :root {
-  --accent: orange;
-  --text: #333;
-  --regular-text: 16px;
-  --lineheight: 1.65;
-  --userfont: roboto-st, sans-serif;
-  --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    --accent: orange;
+    --text: #333;
+    --regular-text: 16px;
+    --lineheight: 1.65;
+    --userfont: roboto-st, sans-serif;
+    --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
 /* GENERAL CSS SETTINGS */
 
 input,
 textarea {
-  outline: none;
+    outline: none;
 }
 input:focus:required:invalid,
 textarea:focus:required:invalid {
-  border-color: red;
+    border-color: red;
 }
 input:required:valid,
 textarea:required:valid {
-  border-color: green;
+    border-color: green;
 }
-
+a {
+    text-decoration: none;
+}
 body {
-  font-family: 'Palatino Linotype';
-  font-size: 16px;
-  color: $mainWhite;
-  min-width: 320px;
+    font-family: 'Palatino Linotype';
+    font-size: 16px;
+    color: $mainWhite;
+    min-width: 320px;
 }
 
 html {
-  background: url('../images/Background/mainBg.png') repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100%;
+    background: url('../images/Background/mainBg.png') repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
 }
 .container {
-  min-width: 771px;
-  height: 100%;
-  margin-top: 45vh;
-  height: auto;
-  padding-left: 11.1%;
-  padding-right: 14.3%;
-  height: 100vh;
-
-  &__inner {
-    min-height: 100%;
-    padding-bottom: 5%;
-    min-width: 681px;
-    margin-right: -42%;
-    width: 90%;
-
-    padding-left: 5%;
-    padding-right: 5%;
+    min-width: 771px;
     height: 100%;
-    position: relative;
-    &::after {
-      content: '';
-      left: 0;
-      top: 10px;
-      height: 100%;
-      width: 100%;
-      z-index: -1;
-      position: absolute;
-      background: url('../images/Background/first-main-bg.png') repeat center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: 100%;
+    margin-top: 45vh;
+    height: auto;
+    padding-left: 11.1%;
+    padding-right: 14.3%;
+    height: 100vh;
+
+    &__inner {
+        min-height: 100%;
+        padding-bottom: 5%;
+        min-width: 681px;
+        margin-right: -42%;
+        width: 90%;
+
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 100%;
+        position: relative;
+        &::after {
+            content: '';
+            left: 0;
+            top: 10px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            background: url('../images/Background/first-main-bg.png') repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: 100%;
+        }
     }
-  }
-  &__content {
-    display: table;
-    width: 100%;
-    padding-left: 40px;
-    padding-top: 5px;
-  }
-}
-.control {
-  float: left;
+    &__content {
+        display: table;
+        width: 100%;
+        padding-left: 40px;
+    }
 }
 
 /* MIXINS */
 
 @mixin greenGradient {
-  background: linear-gradient(to right, #4aff46, #18b015);
+    background: linear-gradient(to right, #4aff46, #18b015);
 }
 @mixin redGradient {
-  background: linear-gradient(to right, #be0000, #ff0000);
+    background: linear-gradient(to right, #be0000, #ff0000);
 }

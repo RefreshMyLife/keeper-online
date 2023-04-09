@@ -1,0 +1,145 @@
+.server {
+    display: inline;
+    text-align: center;
+    &__label {
+    }
+
+    &__filling {
+    }
+
+    &__item {
+        width: 83%;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    &__info {
+        width: 90%;
+        padding-left: 10px;
+        text-align: justify;
+    }
+
+    &__name {
+        color: #2a1719;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        text-shadow: 1px 0 #920404;
+        /* identical to box height */
+
+        letter-spacing: 0.025em;
+    }
+
+    &__mode {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.025em;
+
+        color: #920404;
+    }
+
+    &__online {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        /* identical to box height */
+
+        letter-spacing: 0.025em;
+
+        color: #2a1719;
+
+        float: right;
+    }
+
+    &__line {
+        position: relative;
+        display: table;
+
+        width: 100%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        &::after {
+            content: '';
+            top: -6px;
+            right: -10px;
+            min-height: 17px;
+            min-width: 14px;
+            position: absolute;
+            transform: translate(-50% -50%);
+            background: url('../images/right-decor.png') no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: 100%;
+            z-index: 2;
+        }
+        &::before {
+            z-index: 2;
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: -10px;
+            min-height: 17px;
+            min-width: 14px;
+            background: url('../images/left-decor.png') no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: 100%;
+        }
+        &-fill {
+            min-height: 5px;
+            max-width: 230px;
+            background: linear-gradient(to right, #18b015, #4aff46);
+        }
+        .fill-1 {
+            width: 100%;
+        }
+        .fill-2 {
+            width: 80%;
+        }
+        .fill-3 {
+            width: 70%;
+        }
+        .fill-4 {
+            width: 44%;
+        }
+        .fill-5 {
+            width: 100%;
+            background: linear-gradient(to right, #be0000, #ff0000) !important;
+        }
+    }
+    &__capacity {
+        padding-top: 15px;
+        text-align: center;
+    }
+    &__all-online {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.025em;
+
+        color: #211614;
+    }
+
+    &__online-number {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        /* identical to box height */
+
+        letter-spacing: 0.025em;
+
+        color: #920404;
+    }
+
+    &__today-online {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.025em;
+
+        color: #211614;
+    }
+}

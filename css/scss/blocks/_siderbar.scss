@@ -1,20 +1,32 @@
 .sidebar {
-  display: table-cell;
-  vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
 
-  background: url('../images/Background/sidebar-bg.png') repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100%;
+    background: url('../images/Background/sidebar-bg.png') repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 
-  position: absolute;
+    position: absolute;
 
-  width: 34%;
+    width: 40%;
 
-  height: 100%;
-  &__container {
-    padding-left: 46px;
-    width: 55%;
-  }
+    &__container {
+        padding-left: 25px;
+        padding-right: 85px;
+        width: 55%;
+        margin: 0 auto;
+        height: 100%;
+
+        margin: 0 auto;
+        &-inner {
+            position: relative;
+            margin: 0 auto;
+            position: relative;
+            margin: 0 auto;
+            width: 95%;
+            height: 100%;
+        }
+    }
 }

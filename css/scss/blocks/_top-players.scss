@@ -1,0 +1,63 @@
+.top {
+    &__players {
+    }
+
+    &__players-label {
+    }
+
+    &__players-table {
+    }
+}
+
+.table {
+    table-layout: auto;
+    width: 100%;
+    text-align: center;
+    &__names {
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+
+        color: #2a1719;
+    }
+    tr {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    &__players-info {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        text-shadow: 1px 0px #920404;
+        color: #2a1719;
+        min-height: 30px;
+        position: relative;
+        margin-bottom: 15px;
+        &::after {
+            content: '';
+            left: 0;
+            top: 15px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: url('../images/table-line.png') no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: 100%;
+        }
+    }
+
+    &__player-name {
+        padding: 10px;
+    }
+
+    &__player-drops {
+    }
+
+    &__player-level {
+    }
+}
