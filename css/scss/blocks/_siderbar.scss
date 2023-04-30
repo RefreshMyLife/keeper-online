@@ -11,14 +11,13 @@
     position: absolute;
 
     width: 40%;
-
+    padding-bottom: 60px;
     &__container {
-        padding-left: 25px;
+        padding-left: 10px;
         padding-right: 85px;
         width: 55%;
         margin: 0 auto;
         height: 100%;
-
         margin: 0 auto;
         &-inner {
             position: relative;
@@ -27,6 +26,7 @@
             margin: 0 auto;
             width: 95%;
             height: 100%;
+            z-index: 1;
         }
     }
 }

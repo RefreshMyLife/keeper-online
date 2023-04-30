@@ -1,0 +1,76 @@
+.carousel {
+    position: relative;
+    height: 100px;
+    width: 87%;
+    padding: 10px 40px;
+}
+
+.carousel img {
+    width: 153px;
+    height: 115px;
+    /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+    display: block;
+    opacity: 0.5;
+}
+
+.arrow {
+    position: absolute;
+    top: 60px;
+    padding: 5px 15px;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    background: url('../images/Background/arrow-bg.png') no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: 100%;
+    display: block;
+    z-index: 3;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.arrow:hover {
+    background: #000000;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.carousel-arrow-prev {
+    left: 7px;
+}
+
+.carousel-arrow-next {
+    right: 7px;
+}
+
+.carousel__container {
+    position: absolute;
+    width: 90%;
+    overflow: hidden;
+    height: 150px;
+}
+
+.carousel__container ul {
+    height: 130px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    font-size: 0;
+}
+
+.carousel__container li {
+    margin-right: 10px;
+    display: inline-block;
+    padding: 10px;
+    background: url('../images/frame-carousel.png') no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: 100%;
+}

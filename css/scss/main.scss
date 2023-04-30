@@ -8,6 +8,12 @@
 @import 'blocks/market';
 @import 'blocks/top-players';
 @import 'blocks/events';
+@import 'blocks/home';
+@import 'blocks/slider';
+@import 'blocks/carousel';
+@import 'blocks/post';
+@import 'blocks/site-map';
+@import 'blocks/registration';
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
 $fontFamily: 'Palatino Linotype';
@@ -68,9 +74,9 @@ html {
     padding-left: 11.1%;
     padding-right: 14.3%;
     height: 100vh;
+    position: relative;
 
     &__inner {
-        min-height: 100%;
         padding-bottom: 5%;
         min-width: 681px;
         margin-right: -42%;
@@ -78,8 +84,14 @@ html {
 
         padding-left: 5%;
         padding-right: 5%;
-        height: 100%;
+        margin-bottom: 80px;
         position: relative;
+        .footer__head {
+            position: absolute;
+            width: 90%;
+            left: 5%;
+            right: 0;
+        }
         &::after {
             content: '';
             left: 0;

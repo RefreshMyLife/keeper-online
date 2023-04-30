@@ -1,0 +1,121 @@
+.slider {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    transition: background-image 0.8s ease-in-out;
+    &__container {
+        position: relative;
+    }
+}
+
+.slider .slide {
+    display: none;
+}
+.slide-arrow {
+    z-index: 3;
+    position: absolute;
+    table-layout: auto;
+    min-width: 90px;
+
+    top: 110px;
+    left: 45px;
+
+    height: 4rem;
+    width: 80px;
+    border: none;
+
+    font-size: 20px;
+    color: white;
+}
+
+#slide-arrow-prev {
+    font-size: 26px;
+    padding: 5px 15px;
+    color: white;
+    cursor: pointer;
+    background: url('../images/Background/arrow-bg.png') no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: 100%;
+    left: 0;
+}
+
+#slide-arrow-next {
+    padding: 5px 15px;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    background: url('../images/Background/arrow-bg.png') no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: 100%;
+    right: 0;
+}
+.caption {
+    position: absolute;
+    left: 45px;
+    top: 25px;
+    bottom: 0;
+    opacity: 0;
+    display: inline-block;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    transition: all 0.8s ease-in-out;
+    background-color: #956a2f;
+    color: transparent;
+    text-shadow: 0px 1px 2px white;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+.slide {
+    &__title {
+    }
+
+    &__timer {
+        width: 200%;
+        table-layout: auto;
+        position: absolute;
+        bottom: 30px;
+    }
+
+    &__timer-text {
+        width: 600px;
+
+        background-color: #956a2f;
+        color: transparent;
+        text-shadow: 0px 1px 2px white;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        span {
+            color: white;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 60px;
+        }
+    }
+
+    &__timer-time {
+    }
+}
+.timer-days {
+}
+.timer-hours {
+}
+.timer-minuts {
+}
+.timer-seconds {
+}

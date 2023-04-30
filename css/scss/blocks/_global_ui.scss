@@ -43,3 +43,21 @@
     -o-background-size: cover;
     background-size: cover;
 }
+.main__info-bg {
+    font-size: 30px;
+    line-height: 40px;
+    background-color: #956a2f;
+    color: transparent;
+    text-shadow: 0px 1px 2px white;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    padding: 25px 55px;
+    background: url('../images/main-info-plate-bg.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+    z-index: 3;
+}

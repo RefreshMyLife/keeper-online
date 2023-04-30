@@ -1,0 +1,212 @@
+.registration {
+    text-align: center;
+    padding: 0 75px;
+
+    &__title {
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    &__text-warning {
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    &__form {
+    }
+
+    &__table {
+        background: url('../images/Background/registration-bg.png') no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: 100% 100%;
+        position: relative;
+        z-index: 3;
+        margin: 0 auto;
+        padding: 10%;
+        vertical-align: middle;
+        font-size: 15px;
+        line-height: 20px;
+
+        tr {
+            text-align: left;
+        }
+    }
+    &__table-space {
+        width: 10%;
+    }
+
+    &__table-input {
+        input {
+            width: 100%;
+            margin: 0;
+            min-height: 5px;
+            padding: 10px 0 10px 15px;
+            background: url(../images/Background/input-bg.png) no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    }
+    &__login {
+    }
+
+    &__login-text {
+    }
+
+    &__password-text {
+    }
+
+    &__repeat-password-text {
+    }
+
+    &__name {
+    }
+
+    &__name-text {
+    }
+
+    &__email {
+    }
+
+    &__captcha {
+    }
+
+    &__captcha-text {
+    }
+
+    &__captcha-numbers {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__requirements {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        &:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+    }
+    &__checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+
+        &:checked ~ .checkmark {
+            background-color: #2196f3;
+        }
+    }
+}
+
+.registration__requirements {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: left;
+    a {
+        color: #1394cb;
+        text-decoration: underline;
+    }
+    &:last-child {
+        padding-top: 5px;
+    }
+    &-block {
+        margin-top: 20px;
+    }
+}
+
+.registration__requirements input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: url('../images/Background/checkbox-bg.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.registration__requirements:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.registration__requirements input:checked ~ .checkmark {
+    background-color: #2196f3;
+}
+
+.checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.registration__requirements input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.registration__requirements .checkmark:after {
+    background-color: #956a2f;
+    box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.5);
+    left: 9px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 20px 20px;
+    -ms-transform: rotate(45deg);
+    transform: rotate(90deg);
+}
+
+@media (min-width: 2000px) {
+    .registration__requirements {
+        &-block {
+            padding-left: 20%;
+        }
+    }
+}
+
+@media (min-width: 1800px) {
+    .registration__requirements {
+        &-block {
+            padding-left: 10%;
+        }
+    }
+}

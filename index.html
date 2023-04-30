@@ -19,6 +19,9 @@
         <link rel="stylesheet" href="css/fonts.css" />
 
         <script src="js/common.js" defer></script>
+        <script src="js/slider.js" defer></script>
+        <script src="js/timer.js" defer></script>
+        <script src="js/carousel.js" defer></script>
     </head>
 
     <body>
@@ -36,11 +39,292 @@
                             class="header__bg-img"
                         />
                     </div>
-                    <div class="header__container"></div>
+                    <table class="header__container">
+                        <tr class="header__block">
+                            <td class="header__nav"><a href="" class="header__nav-link">Главная</a></td>
+                            <td class="header__nav"><a href="" class="header__nav-link">Новости</a></td>
+                            <td class="header__nav"><a href="" class="header__nav-link header__nav-link-faq">FAQ</a></td>
+                            <td class="header__nav"><a href="" class="header__nav-link">Рейтинг</a></td>
+                            <td class="header__nav"><a href="" class="header__nav-link header__nav-link-registration">Регистрация</a></td>
+                            <td class="header__nav"><a href="" class="header__nav-link">Скачать</a></td>
+                        </tr>
+                    </table>
                 </header>
                 <div class="container__content">
                     <div class="main">
-                        ---------------------------------------------------------------------------------------------------
+                        <div class="home__events">
+                            <div class="slider__container">
+                                <div class="slider">
+                                    <div class="slide" data-background="images/slide.png"></div>
+                                    <div class="caption caption-0">
+                                        <div class="slide__title">
+                                            EVENT <br>
+                                            DEVIL SQUARE 
+                                        </div>
+    
+                                        <div class="slide__timer">
+                                            <div class="slide__timer-text timer-1">EVENT START  
+                                                <span class="timer-days">00</span>
+                                                :
+                                                <span class="timer-hours">00</span>
+                                                :
+                                                <span class="timer-minuts">00</span>
+                                                :
+                                                <span class="timer-seconds">00</span>                                                  
+                                            </div>    
+                                        </div>
+                                    </div>
+                                
+                                    <div class="slide" data-background="images/slide.png"></div>
+                                    <div class="caption caption-1">
+                                        <div class="slide__title">
+                                            EVENT <br>
+                                            BLOOD CASTLE
+                                        </div>
+
+                                        
+                                        <div class="slide__timer">
+                                            <div class="slide__timer-text timer-2">EVENT START  
+                                                <span class="timer-days">00</span>
+                                                :
+                                                <span class="timer-hours">00</span>
+                                                :
+                                                <span class="timer-minuts">00</span>
+                                                :
+                                                <span class="timer-seconds">00</span>                                                  
+                                            </div>    
+                                        </div>
+                                    </div>
+                                
+                                    <div class="slide" data-background="images/slide.png"></div>
+                                    <div class="caption caption-2">
+                                        <div class="slide__title">
+                                            EVENT <br>
+                                            CHAOS CASTLE
+                                        </div>
+
+                                            <div class="slide__timer">
+                                                <div class="slide__timer-text timer-3">EVENT START  <span class="timer-days">00</span>
+                                                    :
+                                                    <span class="timer-hours">00</span>
+                                                    :
+                                                    <span class="timer-minuts">00</span>
+                                                    :
+                                                    <span class="timer-seconds">00</span>                                                  
+                                                </div>    
+                                            </div>
+                                    </div>
+                                    <div class="slide" data-background="images/slide.png"></div>
+                                    <div class="caption caption-3">
+                                        <div class="slide__title">
+                                            EVENT <br>
+                                          BALAROG
+                                        </div>
+
+                                            <div class="slide__timer">
+                                                <div class="slide__timer-text timer-4">EVENT START  <span class="timer-days">00</span>
+                                                    :
+                                                    <span class="timer-hours">00</span>
+                                                    :
+                                                    <span class="timer-minuts">00</span>
+                                                    :
+                                                    <span class="timer-seconds">00</span>                                                  
+                                                </div>    
+                                            </div>
+                                    </div>
+                                    <div class="slide-arrow">                           
+                                        <button  id="slide-arrow-prev">
+                                            &#8249;
+                                            </button>
+                                            <button  id="slide-arrow-next">
+                                            &#8250;
+                                            </button>              
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                        <img src="/images/Background/main-decor-bg.png" alt="Decor" class="home__decor-img">
+
+                        <div class="main__head-title  main__head-screenshot">
+                            <div class="main__screenshot-block">
+                                <h2 class="main__name-title main__info-bg">Скриншоты</h2>
+                            </div>
+                        </div>
+                        <div class="main__carusel">          
+                            <div id="carousel" class="carousel">
+                                <button class="arrow carousel-arrow-prev"> &#8249;</button>
+                                <div class="carousel__container">
+                                    <ul>
+                                        <li><img data-id="1" src="images/carusel.png"></li>
+                                        <li><img data-id="2"src="images/carusel.png"></li>
+                                        <li><img data-id="3"src="images/carusel.png"></li>
+                                        <li><img data-id="4"src="images/carusel.png"></li>
+                                        <li><img data-id="5" src="images/carusel.png"></li>
+                                        <li><img data-id="6"src="images/carusel.png"></li>
+                                        <li><img data-id="7"src="images/carusel.png"></li>
+                                        <li><img data-id="8"src="images/carusel.png"></li>
+                                        <li><img data-id="9"src="images/carusel.png"></li>
+                                        <li><img data-id="10"src="images/carusel.png"></li>
+                                    </ul>
+                                </div>
+                                <button class="arrow carousel-arrow-next"> &#8250;</button>
+                            </div>
+                        </div>
+                     
+
+                        <div class="main__posts-block">
+                            
+                            <h2 class="main__name-title main__info-bg">Новости</h2>
+                            <div class="main__post post" >
+                                <div class="post__title">Мини обновление</div>
+                                <div class="post__video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7c9umBq2xIY" 
+                                        title="YouTube video player" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                                
+
+                                <p class="post__text">
+                                    Открыт доступ в локацию <b>Elbeland</b>  - это новая фарм зона по аналогии с  <b>Ruined Lorencia</b> . 
+                                    Там вы сможете найти стандартных мобов фарм зоны, нового босса для Condor Shard и несколько
+                                    новых монстров. В дальнейшем локация продолжит пополняться новыми боссами и будет использоваться 
+                                    для прохождения квестов. Вход в <b>Elbeland</b> вы сможете найти в Snowstorm  <b>Devias</b>.
+                                </p>
+                                <p class="post__text">
+                                    Пополнился список боссов с которых выпадает <b>Shard of Condor</b>, теперь он выглядит так:
+                                    <b> Ruined Lorencia - Death Dealer, Rusthand - Jungle Noria, Ice Warrior - Snowstorm Devias, 
+                                        Pharaoh - Elbeland, Elder Dragon - Crywolf и Condor Beast в Swamp of Peace
+                                    </b>,
+                                    . Время респауна боссов
+                                    плавающее.<b>Shards of Condor</b> также можно получить выполняя <a href="https://forum.bless.gs/index.php?/topic/47429-задания-гильдий/">задания</a>  гильдий.
+                                </p>
+                                <p class="post__text">
+                                    На <b>Castle Siege</b> теперь будет три призовых места: владельцы замка будут получать <b>60%</b> от
+                                    казны замка, второе место <b>30%</b>, третье место <b>10%</b> от казны. Помимо казны на сервере Avalon мы назначаем 
+                                    призовой фонд от администрации на сумму <b>5000$</b>. Каждую осаду, до тех пор пока призовой фонд не иссякнет,
+                                    победитель будет получать <b>3000</b> бонусов, гильдия занявшая второе место <b>2000</b> бонусов, третье место <b>1000</b> 
+                                    бонусов. Также мы хотим внести ряд изменений, которые позволят большему количество игроков участвовать 
+                                    в осадах, поспособствую более регулярной смене владельцев замка и сделают само мероприятие более 
+                                    интересным и зрелищным.
+                                </p>
+                                
+                                <div class="post__info">
+                                    <span class="post__views">Просмотров : <b>3020</b> </span>
+                                    <span class="post__date">30.03.2023</span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="main__post post" >
+                                <div class="post__title">Быстрый старт новичков</div>
+                        
+                                
+
+                                <p class="post__text">
+                                    Наш сервер неуклонно развивается. Online с каждым днем растет, а сражения 
+                                    все приобретают большие масштабы. Вы только присоединились? А кому то 
+                                    нужны сильные ребята в союзники?
+                                </p>
+                                <p class="post__text">
+                                    Помощь для новичков! Повышение опыта до 15 ресетов (0 гранд ресетов) = +500%
+                                    Все новые созданные персонажи получат Seal of Ascension на 7 дней.
+                                </p>
+                                <p class="post__text">
+                                    Врывайся! Участвуй в событиях и охоте за boss, прояви себя создав свою команду или присоединись к существующей.
+                                     Увеличь скорость достижения своих целей за счет x-shop. Окунись в по настоящему тот самый мир MuOnline 
+                                     который тебе понравился многие годы назад! 
+                                    Mukeeper - лучший выбор для Old Скул любителей MuOnline.
+                                </p>
+                                
+                                <div class="post__info">
+                                    <span class="post__views">Просмотров : <b>69383</b> </span>
+                                    <span class="post__date">25.03.2023</span>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                        <div class="main__site-map site-map">
+                            <div class="site-map__links">
+                                <span class="site-map__parent">Главная</span>
+                                <span class="site-map__dot-separator"> &bull;</span> 
+                                <span class="site-map__active-page">Регистрация</span>
+                            </div>
+                        </div>
+
+                        <div class="main__registration registration">
+                            <div class="main__name-title main__info-bg registration__title">Регистрация</div>
+                            <div class="registration__subtitle">Внимание</div>
+                            <p class="registration__text">
+                                Не устанавливайте пароль, что уже ранее использовали на других серверах MuOnline. 
+                                Так как Ваш аккаунт может быть подвержен взлому (из за Администрации других серверов).
+                            </p>
+                            <p class="registration__text-warning">
+                                Наш сервер не несёт ответсвенности в подобных случаях!
+                            </p>
+                            
+                            <form action="" method="post"  class="registration__form">
+                              
+                                <table class="registration__table">
+                                    <tr class="registration__login">
+                                        <td class="registration__login-text">Придумайте логин:</td>
+                                        <td class="registration__login-space"></td>
+                                        <td class="registration__table-input"> <input type="text" class="input__style" placeholder="Login"></td>
+
+                                    </tr>
+                                    <tr class="registration__password">
+                                        <td class="registration__password-text">Придумайте пароль:</td>
+                                        <td class="registration__table-space"></td>
+                                        <td class="registration__table-input"> <input type="password" class="input__style" placeholder="Password"></td>
+                                    </tr>
+                                    <tr class="registration__repeat-password">
+                                        <td class="registration__repeat-password-text">Повторите пароль:</td>
+                                        <td class="registration__table-space"></td>
+                                        <td class="registration__table-input"> <input type="password" class="input__style" placeholder="Repeat password"></td>
+                                    </tr>
+                                    <tr class="registration__name">
+                                        <td class="registration__name-text">Ваше имя:</td>
+                                        <td class="registration__table-space"></td>
+                                        <td class="registration__table-input"> <input type="text" class="input__style" placeholder="Name"></td>
+                                    </tr>
+                                    <tr class="registration__email">
+                                        <td class="registration__repeat-password-text">Электронная почта:</td>
+                                        <td class="registration__table-space"></td>
+                                        <td class="registration__table-input"> <input type="password" class="input__style" placeholder="Email"></td>
+                                    </tr>
+                                    <tr class="registration__captcha">
+                                        <td class="registration__captcha-text">Ввидете цифры: <span class="registration__captcha-numbers">7797</span></td>
+                                        <td class="registration__table-space"></td>
+                                        <td class="registration__table-input"> <input type="password" class="input__style" placeholder="Numbers"></td>
+                                    </tr>
+                                </table>    
+                                <div class="registration__requirements-block">
+                                    <label class="registration__requirements ">
+                                        Я согласен с <a href="">  Условиями обслуживания, Политикой конфиденциальности </a> и <a href=""> Политикой Возврата</a>.
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="registration__requirements ">
+                                        Я выучил(а) наизусть  с <a href=""> правила сервера </a>.
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <button class="button">
+                                    Регистрация
+                                </button>
+                            </form>
+                            <!-- цуааааааааааааааааааааааааааааааааааааааааааааааааааааааа <br>
+                            ывфывввввввввфывфыв <br>
+                            ыуаыуаыуа <br>
+                            цыуацыуа <br>
+                            ыуацыуа <br> -->
+                        </div>
+                      
                     </div>
                     <div class="sidebar">
                         <div class="sidebar__container">
@@ -231,7 +515,16 @@
                                         <tr class="events__data">
                                             <td class="events__start">Начнётся через</td>
                                             <td class="events__space"></td>
-                                            <td class="events__timer">00:28:12</td>
+                                            <td class="events__timer timer-1">
+
+                                                <span class="timer-days">00</span>
+                                                :
+                                                <span class="timer-hours">00</span>
+                                                :
+                                                <span class="timer-minuts">00</span>
+                                                :
+                                                <span class="timer-seconds">00</span>       
+                                            </td>
                                         </tr>
 
                                         <tr class="events__info">
@@ -243,7 +536,16 @@
                                         <tr class="events__data">
                                             <td class="events__start">Начнётся через</td>
                                             <td class="events__space"></td>
-                                            <td class="events__timer">01:28:12</td>
+                                            <td class="events__timer timer-2">
+
+                                                <span class="timer-days">00</span>
+                                                :
+                                                <span class="timer-hours">00</span>
+                                                :
+                                                <span class="timer-minuts">00</span>
+                                                :
+                                                <span class="timer-seconds">00</span>       
+                                            </td>
                                         </tr>
 
                                         <tr class="events__info">
@@ -255,7 +557,16 @@
                                         <tr class="events__data">
                                             <td class="events__start">Начнётся через</td>
                                             <td class="events__space"></td>
-                                            <td class="events__timer">02:28:12</td>
+                                            <td class="events__timer timer-3">
+
+                                                <span class="timer-days">00</span>
+                                                :
+                                                <span class="timer-hours">00</span>
+                                                :
+                                                <span class="timer-minuts">00</span>
+                                                :
+                                                <span class="timer-seconds">00</span>       
+                                            </td>
                                         </tr>
 
                                         <tr class="events__info">
@@ -267,8 +578,16 @@
                                         <tr class="events__data">
                                             <td class="events__start">Начнётся через</td>
                                             <td class="events__space"></td>
-                                            <td class="events__timer">03:28:12</td>
-                                           
+                                            <td class="events__timer timer-4">
+
+                                                <span class="timer-days">00</span>
+                                                :
+                                                <span class="timer-hours">00</span>
+                                                :
+                                                <span class="timer-minuts">00</span>
+                                                :
+                                                <span class="timer-seconds">00</span>       
+                                            </td>
                                         </tr>
                                     </table>
                                 </div>
@@ -276,7 +595,10 @@
                         </div>
                     </div>
                 </div>
+                <img class="footer__head" src="images/Background/footer-head.png" alt="">
             </div>
+                
+            
         </div>
     </body>
 </html>

@@ -1,0 +1,24 @@
+.site-map {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+
+    &__links {
+        font-size: 15px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.5);
+
+        position: relative;
+    }
+
+    &__parent {
+    }
+
+    &__dot-separator {
+        padding: 0 5px;
+    }
+
+    &__active-page {
+        color: white;
+    }
+}

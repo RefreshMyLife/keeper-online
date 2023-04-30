@@ -1,6 +1,61 @@
+.home {
+    &__decor-img {
+        width: 100%;
+        height: 60px;
+    }
+}
+.main {
+    &__info {
+    }
+
+    &__info-screenshot {
+    }
+    &__title-block {
+    }
+
+    &__info-bg {
+    }
+    &__post {
+    }
+    &__posts-block {
+        text-align: center;
+    }
+    &__site-map {
+    }
+}
 .main {
     display: table-cell;
 
     vertical-align: middle;
     width: 60%;
+    padding-left: 25px;
+    &__head-title {
+    }
+
+    &__head-screenshot {
+    }
+
+    &__screenshot-block {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__name-title {
+        display: inline-block;
+        vertical-align: middle;
+
+        line-height: 40px;
+        background-color: #956a2f;
+        color: transparent;
+        text-shadow: 0px 1px 2px white;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+    }
+
+    &__info-bg {
+    }
+
+    &__registration {
+    }
 }
